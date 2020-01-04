@@ -3,6 +3,12 @@ A c++ module interfaces with the NODE.JS application and allows for high perform
 
 ![alt text](https://raw.githubusercontent.com/OrsoEric/2019-01-04-OrangeBot-Node-Cpp/master/I9%20-%20Browser%20interface.PNG)
 
+You can construct your c++ project as usual.
+When the project is operational and the API passed the test bench, you can make a binding file to use the NAPI.H to expose the API to NODE.JS. From there, NODE can call the function like it would call any other module. The C++ is compiled natively by the C++ compiler. node run build takes care of the compilation and the bindings.
+
+If you change C fines you need to recompile.
+If you only change .JS or .html files, you don't need to recompile.
+
 # HowTo
 1) create project folders
 	2020-01-04-OrangeBot-Cpp/
